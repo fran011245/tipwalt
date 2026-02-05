@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: walt-tipping-api
+    env: node
+    buildCommand: npm install
+    startCommand: node api/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_PORT
+        value: 10000
+      - key: BASE_RPC_URL
+        value: https://mainnet.base.org
+      - key: WALT_TOKEN_ADDRESS
+        value: 0x1E018AC547796185f978aF6AeFa9b1e88D1Bc0b1
+      - key: WEBAPP_URL
+        value: https://tipwalt.com
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false  # Set manually in Render dashboard
+      - key: FAUCET_PRIVATE_KEY
+        sync: false  # Optional: set to enable faucet

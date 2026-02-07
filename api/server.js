@@ -282,7 +282,7 @@ app.get('/health', (req, res) => {
   });
 });
 
-const PORT = process.env.API_PORT || 3001;
+const PORT = process.env.PORT || process.env.API_PORT || 3001;
 app.listen(PORT, () => {
   console.log(`🚀 API server running on port ${PORT}`);
   console.log(`   Endpoints:`);

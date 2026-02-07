@@ -3,7 +3,7 @@ services:
     name: walt-tipping-api
     env: node
     buildCommand: npm install
-    startCommand: node api/server.js
+    startCommand: npm run start:api
     envVars:
       - key: NODE_ENV
         value: production

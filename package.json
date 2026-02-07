@@ -14,13 +14,20 @@
     "db:init": "node scripts/init-db.js",
     "test": "jest"
   },
-  "keywords": ["walt", "tip", "base", "telegram", "bot"],
+  "keywords": [
+    "walt",
+    "tip",
+    "base",
+    "telegram",
+    "bot"
+  ],
   "author": "Walt",
   "license": "MIT",
   "dependencies": {
     "@telegraf/session": "^2.0.0-beta.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.0",
+    "ethers": "^5.7.2",
     "express": "^4.18.0",
     "pg": "^8.11.0",
     "redis": "^4.6.0",
